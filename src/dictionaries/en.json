@@ -1,0 +1,45 @@
+{
+    "header":{
+        "headerTitle": "Hello"
+    },
+
+     "hero":{
+        "heroFirstName": "Margarita",
+        "heroLastName": "Gorbachova",
+        "heroText": "Psychiatrist, psychedelic psychotherapist, integrator of psychedelic experiences",
+        "heroBtn": "Записаться на консультацию"
+    },
+
+     "experience":{
+        "experienceFirst": "years in medicine",
+        "experienceSecond": "happy clients",
+        "experienceThird": "years of experience working with severe mental pathology"
+    },
+
+     "info":{
+        "infoText": "Mental health for most people is something they know nothing about. Although, for the most part, a healthy psyche is the key to a happy life."
+    },
+
+     "about":{
+        "aboutTitle": "Обо мне",
+        "aboutBtnFirst": "A doctor for whom achieving the patient’s health is a priority",
+        "aboutTextFirst": "My goal is to achieve a complete sense of well-being for the patient: achieving the highest stage of Maslow's pyramid - self-actualization.",
+        "aboutBtnSecond": "Psychedelics Researcher",
+        "aboutTextSecond": "I learn from people who are directly involved in advanced research in this field in the world and have the latest information that is available to humanity today, and also summarize all available data, forming a real picture of the prospects for this area. In addition, I am a direct participant in some of these studies.",
+        "aboutBtnThird": "A doctor free from the pharmaceutical business and the work of the system",
+        "aboutTextThird": "I do not cooperate with any pharmaceutical company, and I am also engaged exclusively in private practice, which allows me to concentrate on achieving results and more attentive treatment of the patient.",
+        "aboutBtnFourth": "A doctor for whom achieving the patient’s health is a priority",
+        "aboutTextFourth": "Each person is unique and his treatment must be unique, taking into account all his data and using all methods, emphasizing lifestyle, habits, environment, changing patterns of thinking and behavior, manifestation of creative potential, studying oneself, and not just standard pharmacotherapy and psychotherapy.",
+        "aboutMore": "To learn more"
+    },
+
+     "recommendations":{
+        "recommendTitle": "Contact me if:",
+        "recommend1": "You were dissatisfied with the result of treatment from a doctor with a standard approach",
+        "recommend2": "You were not satisfied with the results of your previous treatment, but the doctors cannot offer you anything else",
+        "recommend3": "You would like a closer look at your situation",
+        "recommend4": "You don't know where to turn and there is a feeling that “nothing helps”",
+        "recommend5": "You want to use psychedelics to improve your health and want this experience to be as effective and safe as possible",
+        "recommend6": "You have any psychiatric or psychological problem that you want to approach comprehensively and responsiblym"
+    }
+}

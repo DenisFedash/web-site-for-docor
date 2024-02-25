@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@font-face {
+  font-family: 'Corsa Grotesk';
+  src: url('./public//fonts//corsa-grotesk/CorsaGrotesk-Regular.eot');
+  src: local('Corsa Grotesk Regular'), local('CorsaGrotesk-Regular'),
+    url('./public/fonts/corsa-grotesk/CorsaGrotesk-Regular.eot') format('embedded-opentype'),
+    url('./public/fonts/corsa-grotesk/CorsaGrotesk-Regular.woff2') format('woff2'),
+    url('./public/fonts/corsa-grotesk/CorsaGrotesk-Regular.woff') format('woff'),
+    url('./public/fonts/corsa-grotesk/CorsaGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400, 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Corsa Grotesk';
+  src: url('./public/fonts/corsa-thin/CorsaGrotesk-Thin.eot');
+  src: local('Corsa Grotesk Thin'), local('CorsaGrotesk-Thin'),
+    url('./public/fonts/corsa-thin/CorsaGrotesk-Thin.eot') format('embedded-opentype'),
+    url('./public/fonts/corsa-thin/CorsaGrotesk-Thin.woff2') format('woff2'),
+    url('./public/fonts/corsa-thin/CorsaGrotesk-Thin.woff') format('woff'),
+    url('./public/fonts/corsa-thin/CorsaGrotesk-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poiret One';
+  src: url('./public/fonts/pioret/PoiretOne-Regular.eot');
+  src: local('Poiret One'), local('PoiretOne-Regular'),
+    url('./public/fonts/pioret/PoiretOne-Regular.eot') format('embedded-opentype'),
+    url('./public/fonts/pioret/PoiretOne-Regular.woff2') format('woff2'),
+    url('./public/fonts/pioret/PoiretOne-Regular.woff') format('woff'),
+    url('./public/fonts/pioret/PoiretOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #fffefb;
+  color: #080808;
+}
+
+.layout {
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
