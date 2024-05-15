@@ -14,7 +14,7 @@ export default async function RootLayout({ children, params: { lang } }) {
       <head />
 
       <body>
-        <Header textTr={dict.header} />
+        <Header textTr={dict.header} lang={lang} />
         {children}
       </body>
     </html>

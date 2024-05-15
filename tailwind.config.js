@@ -6,6 +6,11 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      "border-color": "#BEBEBE",
+      "yellow-col": "#FFE793",
+    },
+
     screens: {
       sm: "390px",
       md: "768px",
@@ -24,9 +29,15 @@ module.exports = {
         "experience-bg": "#FFF7D2",
       },
 
+      boxShadow: {
+        "card-shadow": "0px 6px 50px 0px #E6E6E6",
+      },
+
       backgroundImage: {
         "gradient-header":
           "linear-gradient(180deg, #FFE793 0%, rgba(255, 230.87, 147.05, 0) 100%)",
+        "footer-gradient":
+          "linear-gradient(180deg, rgba(255, 231, 147, 0.00) 0%, #FFE793 100%)",
       },
     },
   },

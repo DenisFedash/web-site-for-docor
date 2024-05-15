@@ -1,13 +1,18 @@
 {
     "header":{
-        "headerTitle": "Hello"
+        "headerMain": "Main",
+        "headerAbout":"About me",
+        "headerConsultations": "Consultations",
+        "headerContacts": "Contacts",
+        "headerLang": "Language"
     },
 
      "hero":{
         "heroFirstName": "Margarita",
         "heroLastName": "Gorbachova",
         "heroText": "Psychiatrist, psychedelic psychotherapist, integrator of psychedelic experiences",
-        "heroBtn": "Записаться на консультацию"
+        "heroBtn": "Sign up for a consultation"
+     
     },
 
      "experience":{
@@ -30,7 +35,15 @@
         "aboutTextThird": "I do not cooperate with any pharmaceutical company, and I am also engaged exclusively in private practice, which allows me to concentrate on achieving results and more attentive treatment of the patient.",
         "aboutBtnFourth": "A doctor for whom achieving the patient’s health is a priority",
         "aboutTextFourth": "Each person is unique and his treatment must be unique, taking into account all his data and using all methods, emphasizing lifestyle, habits, environment, changing patterns of thinking and behavior, manifestation of creative potential, studying oneself, and not just standard pharmacotherapy and psychotherapy.",
-        "aboutMore": "To learn more"
+        "aboutMore": "To learn more",
+        "aboutDesc": "I deeply understand the problem that occurs with a person, from its origins to the manifestation of a particular pathology. I am familiar with all modern methods of treatment of psychiatric diseases as well as borderline conditions. My special interests include psychedelics and their effect in helping the individual to achieve a state of wellness. I participate as a facilitator and consultant for psilocybin retreats in the Netherlands",
+        "adoutPrincipleTitle": "My Principles:",
+        "adoutPrinciple1": "quality and holistic help, taking into account all the latest techniques, the person's personality, physical condition, social capabilities, worldview, values and other factors",
+        "adoutPrinciple2": "anyone can be healthy, even if they have an 'incurable' disease",
+        "adoutPrinciple3": "everyone is worthy of careful and varied attention",
+        "adoutPrinciple4": "being healthy=being content and happy, not just the absence of pathologies and defects prescribed in the medical literature",
+        "adoutPrinciple5": "I am not treating a unit of the system so that it can perform its job duties, but a person"
+        
     },
 
      "recommendations":{
@@ -41,5 +54,119 @@
         "recommend4": "You don't know where to turn and there is a feeling that “nothing helps”",
         "recommend5": "You want to use psychedelics to improve your health and want this experience to be as effective and safe as possible",
         "recommend6": "You have any psychiatric or psychological problem that you want to approach comprehensively and responsiblym"
+    },
+
+    "consultations": {
+        "consultTitle": "Consultations",
+        "consultCardTitle1": "Consultation - Mental Health Diagnosis",
+        "consultCardText1": "Comprehensive examination of your mental well-being, diagnosis if necessary, prescription of treatment, lifestyle adjustments, techniques to help you achieve a state of health and well-being, recommendations for the prevention of somatic diseases that may be influenced by your mental condition.",
+        "consultCardDur1": "Duration: 90 minutes",
+        "consultCardPrice1": "Cost: $300",
+        "consultCardTitle2": "Standard Consultation",
+        "consultCardText2": "Addressing a specific psychiatric or psychological issue that is bothering you and requires resolution.",
+        "consultCardDur2": "Duration: 90 minutes",
+        "consultCardPrice2": "Cost: $300",
+        "consultCardTitle3": "Psychedelic Experience Risk Assessment",
+        "consultCardText3": "Assessment of the possibility, safety, and benefits of a psychedelic experience for you. Understanding potential risks associated with this experience. Recommendations for harm reduction and increased safety. This consultation aims to minimize harm and determine how safe and/or beneficial the experience can be for you personally.",
+        "consultCardDur3": "Duration: 60 minutes",
+        "consultCardPrice3": "Cost: $150",
+        "consultCardTitle4": "Psychedelic Experience Integration",
+        "consultCardText4": "Preparation for addressing a psychological issue using psilocybin or other psychedelics and integrating insights into practical use in real life after the trip.",
+        "consultCardDur4": "Duration: 2-4 sessions of 60 minutes each",
+        "consultCardPrice4": "Cost: $100",
+        "consultBtnSign": "Schedule a Consultation",
+        "consultBtnDesc": "How does the consultation process work?",
+        "consult1Title": "How does the Mental Health Diagnosis counseling session work?",
+        "consult1Option1": "1. You receive a series of tests and questionnaires 2 weeks prior to your consultation. ",
+        "consult1Option2": "2. A maximum of 1 week before the consultation, you send your data to me by e-mail.",
+        "consult1Option3": "3. During the consultation I ask additional questions and finalize my understanding of your mental structure, give recommendations, assignments and treatment if necessary, and describe your condition in detail.",
+        "consult1Option4": "4. After your consultation, you receive an electronic format of complete information about your mental health, options for improving it, and recommendations for preventing mental illness.",
+        "consult1Option5": "5. 3 weeks after the consultation, you get additional tests and email me the results after you complete them.",
+        "consult1Option6": "6. After 1 month based on the results you get an additional file with edited recommendations.",
+        "consultGetTitile": "What do you get?",
+        "consult1Get1": "1. A complete description and explanation of the processes that occur in your psyche, if necessary a diagnosis. The structure of your psyche.",
+        "consult1Get2": "2. Recommendations and, if necessary, treatment to help you come to a state of health. ",
+        "consult1Get3": "3. Understanding your condition. No feeling of, 'I don't know what to do anymore' or 'I'm at a dead end', 'Feeling like a ceiling'",
+        "consult2Title": "How Standard Counseling Happens.",
+        "consult2Option1": "1. You receive a series of tests and questionnaires 2 weeks before the consultation.",
+        "consult2Option2": "2. A maximum of 1 week before the consultation, you send your data to my e-mail.",
+        "consult2Option3": "3. During the consultation I ask additional questions and finalize the understanding of the causes of the problem, their treatment and prevention of future problems. Giving you a general understanding of your direction of travel toward recovery.",
+        "consult2Option4": "4. . After your consultation, you receive an electronic format of complete information about your problem and your options. Diagnosis and treatment, lifestyle recommendations and goals, social improvement, and other things that may affect your condition in one way or another.",
+        "consult2Option5": "5. 3 weeks after the consultation, you get additional tests and email me the results after you have completed them.",
+        "consult2Option6": "6. After 1 month based on the results you get an additional file with edited recommendations.",
+        "consult3Title": "How does the 'Risk Assessment of the Psychedelic Experience' consultation work?",
+        "consult3Option1": "1. You receive a series of tests and questionnaires before the consultation.",
+        "consult3Option2": "2. A maximum of 3 days before the consultation, you send your data to me by e-mail.",
+        "consult3Option3": "3. During the consultation I ask additional questions and finalize the understanding of the safety of this experience for you, give recommendations that are necessary for you specifically for both the possibility and undesirability of this experience.",
+        "consult3Option4": "4. After the consultation, you also receive a guide with information to ensure your own safety during the trip.",
+        "consult3Get1": "1. Understanding the possibility of a psychedelic experience for your psyche. A clear explanation of why, if this experience is strictly not recommended.",
+        "consult3Get2": "2. A basic understanding of the state of your psyche.",
+        "consult3Get3": "3. Advice on the safety of living a psychedelic experience specifically for you.",
+        "consult4Title": "How does the Integrating the Psychedelic Experience consultation work?",
+        "consult4Name1": "1 counseling session ",
+        "consult4Name11": "BEFORE",
+        "consult4Name12": "trip",
+        "consult4Option1": "1. You receive a series of tests and questionnaires prior to the consultation.",
+        "consult4Option2": "2. A maximum of 3 days before the consultation, you send your details to me by email.",
+        "consult4Option3": "3. After studying your request, your situation and possible reasons that prevent you from achieving what you want or solving the problem, we conduct a consultation in the format of hypnosuggestion and attunement to the upcoming experience, identifying possible underlying causes.",
+        "consult4Option4": "4. You receive a guide to ensure your own safety during the trip.",
+        "consult4Name2": "2-4 consultations ",
+        "consult4Name21": "AFTER",
+        "consult4Name22": "tripping",
+        "consult4Get1": "1. A 60 minute consultation in the format of discussing the experienced state and connecting realizations to the real world and actions.",
+        "consult4Get2": "2. Based on the discussion, you receive a guide with personalized recommendations to maintain and consolidate the effect.",
+        "consult4Get3": "3. Psychotherapy in the format of combining several techniques for sessions 3-4, with the aim of finetuning the experience as needed.",
+         "heroFormTitle": "Contact Me",
+        "heroFormNameTitle": "Counseling appointment form",
+        "heroFormName": "First and Last name",
+        "heroFormEmail": "E-mail",
+        "heroFormConnect": "Method of contact (insert link to your messenger)",
+        "heroFormOptions": "Choose an option",
+        "heroFormOption1": "Consultation - Mental Health Diagnosis",
+        "heroFormOption2": "Standard Consultation",
+        "heroFormOption3": "Psychedelic Experience Risk Assessment",
+        "heroFormOption4": "Psychedelic Experience Integration",
+        "heroFormMessage": "Your request",
+        "heroFormCheckbox": "I consent to the processing of personal data",
+        "heroRequestMessage": "Thank you. Your request has been sent",
+        "heroBtn": "Sign up for a consultation"
+    },
+
+     "form":{
+        "FormTitle": "Contact Me",
+        "FormNameTitle": "Counseling appointment form",
+        "FormName": "First and Last name",
+        "FormEmail": "E-mail",
+        "FormConnect": "Method of contact (insert link to your messenger)",
+        "FormOptions": "Choose an option",
+        "FormOption1": "Consultation - Mental Health Diagnosis",
+        "FormOption2": "Standard Consultation",
+        "FormOption3": "Psychedelic Experience Risk Assessment",
+        "FormOption4": "Psychedelic Experience Integration",
+        "FormMessage": "Your request",
+        "FormCheckbox": "I consent to the processing of personal data",
+        "RequestMessage": "Thank you. Your request has been sent",
+        "FormBtn": "Sign up for a consultation"
+    },
+
+     "feedback": {
+        "feedbackTitle": "Feedback"
+    },
+
+     "feedbackForm": {
+        "feedbackFormTitle": "Feedback form",
+        "feedbackFormName": "Name:",
+        "feedbackFormMessage": "Comment:",
+        "feedbackFormBtn": "Send feedback"
+    },
+
+
+    "socials": {
+        "socialsTitle": "Social media:"
+    },
+
+     
+    "footer": {
+        "footerTitle": "Margarita Gorbachova"
     }
 }

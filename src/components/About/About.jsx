@@ -3,10 +3,12 @@ import Image from "next/image";
 import React, { useState } from "react";
 import snake from "../../../public/icons/snake.svg";
 import arrow from "../../../public/icons/arrow.svg";
+import { AboutMe } from "./AboutMe";
 
 export const About = ({ textTr }) => {
+  const [isOpen, setIsOpen] = useState(false);
   const [isTextVisible, setIsTextVisible] = useState({
-    first: false,
+    first: true,
     second: false,
     third: false,
     fourth: false,
@@ -19,12 +21,16 @@ export const About = ({ textTr }) => {
     }));
   };
   return (
-    <div className="layout mb-16">
-      <div className="mb-8 text-center">
-        <h1 className="text-xl font-corsa">{textTr.aboutTitle}</h1>
-        <Image src={snake} alt="snake-icon" className="mr-auto ml-auto" />
+    <div id="about" className="layout mb-16 md:mb-[108px]">
+      <div className="mb-8 md:mb-12 text-center">
+        <h1 className="text-xl md:text-5xl font-corsa">{textTr.aboutTitle}</h1>
+        <Image
+          src={snake}
+          alt="snake-icon"
+          className="mr-auto ml-auto md:w-[332px]"
+        />
       </div>
-      <div className="mb-8">
+      <div className="mb-8 md:mb-12">
         <button
           type="button"
           className={`font-poiret  py-2.5 rounded-full w-full mb-2.5 ${
@@ -32,7 +38,9 @@ export const About = ({ textTr }) => {
           }`}
           onClick={() => toggleTextVisibility("first")}
         >
-          <p className="">{textTr.aboutBtnFirst}</p>
+          <p className="md:text-3xl md:py-[11px] md:px-[107px]">
+            {textTr.aboutBtnFirst}
+          </p>
         </button>
         {isTextVisible.first && (
           <div
@@ -45,11 +53,13 @@ export const About = ({ textTr }) => {
               alt="arrow-icon"
               className="ml-auto mr-auto mb-2"
             />
-            <p className="font-poiret text-justify">{textTr.aboutTextFirst}</p>
+            <p className="font-poiret text-justify md:text-3xl">
+              {textTr.aboutTextFirst}
+            </p>
           </div>
         )}
       </div>
-      <div className="mb-8">
+      <div className="mb-8 md:mb-12">
         <button
           type="button"
           className={`font-poiret  py-5 rounded-full w-full mb-2.5 ${
@@ -57,7 +67,9 @@ export const About = ({ textTr }) => {
           }`}
           onClick={() => toggleTextVisibility("second")}
         >
-          <p className="">{textTr.aboutBtnSecond}</p>
+          <p className="md:text-3xl md:py-[11px] md:px-[107px]">
+            {textTr.aboutBtnSecond}
+          </p>
         </button>
         {isTextVisible.second && (
           <div
@@ -70,11 +82,13 @@ export const About = ({ textTr }) => {
               alt="arrow-icon"
               className="ml-auto mr-auto mb-2"
             />
-            <p className="font-poiret text-justify">{textTr.aboutTextSecond}</p>
+            <p className="font-poiret text-justify md:text-3xl">
+              {textTr.aboutTextSecond}
+            </p>
           </div>
         )}
       </div>
-      <div className="mb-8">
+      <div className="mb-8 md:mb-12">
         <button
           type="button"
           className={`font-poiret  py-2.5 rounded-full w-full mb-2.5 ${
@@ -82,7 +96,9 @@ export const About = ({ textTr }) => {
           }`}
           onClick={() => toggleTextVisibility("third")}
         >
-          <p className="">{textTr.aboutBtnThird}</p>
+          <p className="md:text-3xl md:py-[11px] md:px-[107px]">
+            {textTr.aboutBtnThird}
+          </p>
         </button>
         {isTextVisible.third && (
           <div
@@ -95,7 +111,9 @@ export const About = ({ textTr }) => {
               alt="arrow-icon"
               className="ml-auto mr-auto mb-2"
             />
-            <p className="font-poiret text-justify">{textTr.aboutTextThird}</p>
+            <p className="font-poiret text-justify md:text-3xl">
+              {textTr.aboutTextThird}
+            </p>
           </div>
         )}
       </div>
@@ -107,7 +125,9 @@ export const About = ({ textTr }) => {
           }`}
           onClick={() => toggleTextVisibility("fourth")}
         >
-          <p className="">{textTr.aboutBtnFourth}</p>
+          <p className="md:text-3xl md:py-[11px] md:px-[107px]">
+            {textTr.aboutBtnFourth}
+          </p>
         </button>
         {isTextVisible.fourth && (
           <div
@@ -120,12 +140,25 @@ export const About = ({ textTr }) => {
               alt="arrow-icon"
               className="ml-auto mr-auto mb-2"
             />
-            <p className="font-poiret text-justify">{textTr.aboutTextFourth}</p>
+            <p className="font-poiret text-justify md:text-3xl">
+              {textTr.aboutTextFourth}
+            </p>
           </div>
         )}
       </div>
-      <div className=" text-center font-poiret underline text-[#A68D6E]">
+      <div
+        className=" text-center font-poiret underline text-[#A68D6E] md:text-3xl"
+        onClick={() => setIsOpen(true)}
+      >
         {textTr.aboutMore}
+      </div>
+
+      <div
+        className={
+          isOpen ? "top-0 left-0 z-10 fixed overflow-auto max-h-full" : "hidden"
+        }
+      >
+        <AboutMe textTr={textTr} setIsOpen={setIsOpen} />
       </div>
     </div>
   );
