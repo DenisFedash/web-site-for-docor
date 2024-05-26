@@ -23,9 +23,10 @@ export default async function Home({ params: { lang }, feedback }) {
       <Recommendations textTr={dict.recommendations} />
       <Consultations textTr={dict.consultations} />
       <FormMessage textTr={dict.form} />
+      <Socials textTr={dict.socials} />
       <FeedbackList textTr={dict.feedback} />
       <FeedbackForm textTr={dict.feedbackForm} />
-      <Socials textTr={dict.socials} />
+
       <Footer textTr={dict.footer} />
     </main>
   );

@@ -14,12 +14,16 @@ export const Footer = ({ textTr }) => {
     <div className="relative bg-footer-gradient">
       <div className="layout">
         <div className="flex items-center mb-6">
-          <Image src={logo} alt="logo" />
-          <h2 className=" text-2xl font-corsa font-light uppercase w-[144px]">
+          <Image
+            src={logo}
+            alt="logo"
+            className="md:w-[100px] md:h-[100px] md:mr-12"
+          />
+          <h2 className=" text-2xl md:text-3xl font-corsa font-light uppercase w-[144px]">
             {textTr.footerTitle}
           </h2>
         </div>
-        <ul className=" flex items-center mb-4">
+        <ul className=" flex items-center md: justify-between mb-4">
           <li className="mr-6">
             <Link href="" target="blanc" className="">
               <div className=" bg-yellow-col p-2 w-9 h-9 rounded-lg  hover:bg-btn-active">
@@ -28,28 +32,40 @@ export const Footer = ({ textTr }) => {
             </Link>
           </li>
           <li className="mr-6">
-            <Link href="https://www.instagram.com/" target="blanc" className="">
+            <Link
+              href="https://www.instagram.com/rita.gorbachova?igsh=MW0xODVraWJzbnVnNQ=="
+              target="blanc"
+              className=""
+            >
               <div className=" bg-yellow-col p-2 w-9 h-9 rounded-lg hover:bg-btn-active">
                 <Image src={instagram} alt="instagram" />
               </div>
             </Link>
           </li>
           <li className="mr-6">
-            <Link href="" target="blanc" className="">
+            <Link href="https://t.me/MargaretGrb" target="blanc" className="">
               <div className=" bg-yellow-col p-2 w-9 h-9 rounded-lg hover:bg-btn-active">
                 <Image src={telegram} alt="telegram" />
               </div>
             </Link>
           </li>
           <li className="mr-6">
-            <Link href="https://www.youtube.com" target="blanc" className="">
+            <Link
+              href="https://www.youtube.com/@Rita.Gorbacheva"
+              target="blanc"
+              className=""
+            >
               <div className=" bg-yellow-col p-2 w-9 h-9 rounded-lg hover:bg-btn-active">
                 <Image src={youtube} alt="youtube" className="mb-0" />
               </div>
             </Link>
           </li>
           <li className="mr-6">
-            <Link href="https://www.tiktok.com/" target="blanc" className="">
+            <Link
+              href="https://www.tiktok.com/@rita.gorbacheva"
+              target="blanc"
+              className=""
+            >
               <div className=" bg-yellow-col p-2 w-9 h-9 rounded-lg hover:bg-btn-active">
                 <Image src={tiktok} alt="tiktok" />
               </div>

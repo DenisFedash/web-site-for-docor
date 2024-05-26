@@ -33,7 +33,7 @@ export const Menu = ({ textTr, setIsOpen }) => {
   }, [languages]);
 
   return (
-    <div className=" bg-[#fffefb] pb-16 ">
+    <div className=" bg-[#fffefb] pb-16">
       <div className="layout flex justify-between bg-gradient-header py-2 mb-12 md:mb-16">
         <Image
           src={logo}

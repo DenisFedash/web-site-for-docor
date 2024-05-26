@@ -30,21 +30,23 @@ export const FeedbackForm = ({ textTr }) => {
 
   return (
     <div className="layout py-6 mb-20">
-      <h2 className="text-xl font-poiret mb-8">{textTr.feedbackFormTitle}</h2>
+      <h2 className="text-xl md:text-3xl md:text-center font-poiret mb-8 md:mb-14">
+        {textTr.feedbackFormTitle}
+      </h2>
       <form onSubmit={handleSubmit} className="">
         <div className="mb-8">
-          <label className=" font-poiret mb-2.5">
+          <label className=" font-poiret mb-2.5 md:text-3xl">
             {textTr.feedbackFormName}
           </label>
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full border border-[#DADADA] rounded-xl p-2.5"
+            className="w-full border border-[#DADADA] rounded-xl p-2.5 md:text-3xl"
           />
         </div>
         <div className="mb-8">
-          <label className=" font-poiret mb-2.5">
+          <label className=" font-poiret mb-2.5 md:text-3xl">
             {textTr.feedbackFormMessage}
           </label>
           <textarea
@@ -52,15 +54,15 @@ export const FeedbackForm = ({ textTr }) => {
             onChange={(e) => setMessage(e.target.value)}
             minLength="10"
             maxLength="300"
-            className="w-full border border-[#DADADA] rounded-xl p-2.5 h-[224px]"
+            className="w-full border border-[#DADADA] rounded-xl p-2.5 h-[224px] md:text-3xl"
           ></textarea>
         </div>
         {error && <p className="text-red-500">{error}</p>}
         <button
           type="submit"
-          className=" font-poiret bg-btn-bg py-5 rounded-full w-full hover:bg-btn-active"
+          className=" font-poiret bg-btn-bg py-5 rounded-full w-full hover:bg-btn-active md:text-3xl"
         >
-          Submit
+          {textTr.feedbackFormBtn}
         </button>
       </form>
     </div>

@@ -84,12 +84,16 @@ body{
     width: 768px;
     padding-left: 40px;
     padding-right: 40px;
-  }
-
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
   @media screen and (min-width: 1440px) {
     width: 1440px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -97,6 +101,138 @@ body{
   font-family: "Poiret One";
   border-radius: 10px;
   background: var(--main-white, #FEFEFE);
-  /* Основная тень */
+ 
   box-shadow: 0px 6px 50px 0px #E6E6E6;
+}
+
+/* Animation for incoming cards when sliding in from the right */
+.slide-in-left {
+  animation: slide-in-right 1s forwards;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for incoming cards when sliding in from the left */
+.slide-in-right {
+  animation: slide-in-left 1s forwards;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for outgoing cards when sliding out to the left */
+.slide-out-right {
+  animation: slide-out-left 1s forwards;
+}
+
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/* Animation for outgoing cards when sliding out to the right */
+.slide-out-left {
+  animation: slide-out-right 1s forwards;
+}
+
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.darkened::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.darkened img,
+.darkened button {
+  opacity: 0.2;
+}
+
+.keen-slider-custom {
+  min-width: 580px !important;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  border: none;
+  width: 9px;
+  height: 9px;
+  background: #dadada;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
+
+  @media screen and (min-width: 1440px) {}
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #ff730d;
+  width: 16px;
+  height: 16px;
+
+  @media screen and (min-width: 768px) {}
+
+  @media screen and (min-width: 1440px) {}
 }

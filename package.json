@@ -12,6 +12,7 @@
     "@formatjs/intl-localematcher": "^0.5.4",
     "@formspree/react": "^2.5.1",
     "axios": "^1.6.8",
+    "keen-slider": "^6.8.6",
     "negotiator": "^0.6.3",
     "next": "14.1.0",
     "react": "^18",
