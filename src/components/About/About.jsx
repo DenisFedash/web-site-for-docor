@@ -30,7 +30,7 @@ export const About = ({ textTr }) => {
           className="mr-auto ml-auto md:w-[332px]"
         />
       </div>
-      <div className="lg:grid lg:gap-10 lg:grid-cols-2">
+      <div className="lg:hidden">
         <div className="mb-8 md:mb-12">
           <button
             type="button"
@@ -162,6 +162,80 @@ export const About = ({ textTr }) => {
               </p>
             </div>
           )}
+        </div>
+      </div>
+      <div className="lg:grid lg:gap-10 lg:grid-cols-2">
+        <div className="mb-8 md:mb-12">
+          <div className="font-poiret py-2.5 w-full mb-2.5 lg:rounded-[40px] lg:rounded-b-none bg-btn-bg">
+            <p className="md:text-3xl md:py-[11px] md:px-[107px] lg:px-6">
+              {textTr.aboutBtnFirst}
+            </p>
+          </div>
+
+          <div className="text-container overflow-hidden transition-max-height max-h-96 lg:max-h-[500px] lg:bg-[#FEFEFE] lg:shadow-lg lg:pb-[297px] lg:px-6">
+            <Image
+              src={arrow}
+              alt="arrow-icon"
+              className="ml-auto mr-auto mb-2"
+            />
+            <p className="font-poiret text-justify md:text-3xl">
+              {textTr.aboutTextFirst}
+            </p>
+          </div>
+        </div>
+        <div className="mb-8 md:mb-12">
+          <div className="font-poiret py-5 lg:py-2.5 w-full bg-btn-bg lg:rounded-[40px] lg:rounded-b-none">
+            <p className="md:text-3xl md:py-[11px] md:px-[107px] lg:px-[151px]">
+              {textTr.aboutBtnSecond}
+            </p>
+          </div>
+
+          <div className="text-container overflow-hidden transition-max-height max-h-96 lg:max-h-[500px] lg:bg-[#FEFEFE] lg:shadow-lg lg:px-6 lg:pb-20">
+            <Image
+              src={arrow}
+              alt="arrow-icon"
+              className="ml-auto mr-auto mb-2"
+            />
+            <p className="font-poiret text-justify md:text-3xl">
+              {textTr.aboutTextSecond}
+            </p>
+          </div>
+        </div>
+        <div className="mb-8 md:mb-12">
+          <div className="font-poiret  py-2.5 w-full mb-2.5 lg:rounded-[40px] lg:rounded-b-none bg-btn-bg">
+            <p className="md:text-3xl md:py-[11px] md:px-[107px] lg:px-6">
+              {textTr.aboutBtnThird}
+            </p>
+          </div>
+
+          <div className="text-container overflow-hidden transition-max-height max-h-96 lg:max-h-[500px] lg:bg-[#FEFEFE] lg:shadow-lg lg:pb-[297px] lg:px-6">
+            <Image
+              src={arrow}
+              alt="arrow-icon"
+              className="ml-auto mr-auto mb-2"
+            />
+            <p className="font-poiret text-justify md:text-3xl">
+              {textTr.aboutTextThird}
+            </p>
+          </div>
+        </div>
+        <div className="mb-12">
+          <div className="font-poiret  py-2.5 w-full mb-2.5 lg:rounded-[40px] lg:rounded-b-non bg-btn-bg">
+            <p className="md:text-3xl md:py-[11px] md:px-[107px] lg:px-6">
+              {textTr.aboutBtnFourth}
+            </p>
+          </div>
+
+          <div className="text-container overflow-hidden transition-max-height max-h-96 lg:max-h-[500px] lg:bg-[#FEFEFE] lg:shadow-lg lg:pb-[297px] lg:px-6">
+            <Image
+              src={arrow}
+              alt="arrow-icon"
+              className="ml-auto mr-auto mb-2"
+            />
+            <p className="font-poiret text-justify md:text-3xl">
+              {textTr.aboutTextFourth}
+            </p>
+          </div>
         </div>
       </div>
       <div

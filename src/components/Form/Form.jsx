@@ -72,7 +72,7 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
           />
         </div>
         <div className="flex flex-col mb-4">
-          <label htmlFor="email" className=" font-poiret text-3xl">
+          <label htmlFor="email" className=" font-poiret md:text-3xl">
             {textTr.FormEmail}
           </label>
           <input

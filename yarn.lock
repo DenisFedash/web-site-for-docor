@@ -4022,6 +4022,11 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
+"swiper@^11.1.4":
+  "integrity" "sha512-1n7kbYJB2dFEpUHRFszq7gys/ofIBrMNibwTiMvPHwneKND/t9kImnHt6CfGPScMHgI+dWMbGTycCKGMoOO1KA=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-11.1.4.tgz"
+  "version" "11.1.4"
+
 "tailwindcss@^3.3.0":
   "integrity" "sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.1.tgz"

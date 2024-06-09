@@ -21,7 +21,7 @@ export const Experience = ({ textTr }) => {
           alt="divider"
           width={6}
           height={117}
-          className=" lg:block lg:mx-6"
+          className="sm:hidden lg:block lg:mx-6"
         />
         <li className="flex items-center md:block md:text-center lg:w-[305px]">
           <div className=" font-corsa mr-2.5 text-xl md:text-5xl w-10 md:w-[96px] md:ml-auto md:mr-auto">
@@ -37,7 +37,7 @@ export const Experience = ({ textTr }) => {
           alt="divider"
           width={6}
           height={117}
-          className=" lg:block lg:mx-6"
+          className="sm:hidden lg:block lg:mx-6"
         />
         <li className="flex items-center md:block md:text-center lg:w-[413px]">
           <div className=" font-corsa mr-2.5 text-xl md:text-5xl w-16 md:w-[60px] md:ml-auto md:mr-auto">

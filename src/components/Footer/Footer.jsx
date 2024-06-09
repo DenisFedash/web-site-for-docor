@@ -55,7 +55,7 @@ export const Footer = ({ textTr }) => {
               target="blanc"
               className=""
             >
-              <div className=" bg-yellow-col p-2 w-9 h-9 rounded-lg hover:bg-btn-active">
+              <div className=" bg-yellow-col px-2 py-2.5 w-9 h-9 rounded-lg hover:bg-btn-active">
                 <Image src={youtube} alt="youtube" className="mb-0" />
               </div>
             </Link>

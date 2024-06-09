@@ -42,6 +42,8 @@ export const Consultations = ({ textTr }) => {
               <Image
                 src={brain}
                 alt="icon-brain"
+                width={39}
+                height={47}
                 className="mr-6 md:w-[78px] md:h-[95px]"
               />
               <h2 className=" font-corsa md:text-3xl">
@@ -75,7 +77,7 @@ export const Consultations = ({ textTr }) => {
             <button
               type="button"
               onClick={() => setIsOpen1(true)}
-              className="rounded-full w-full py-3.5 font-poiret border border-dashed hover:bg-btn-active md:text-3xl"
+              className="rounded-full w-full py-3.5 font-poiret border border-dashed hover:bg-btn-active hover:border-[#FFDF44] md:text-3xl"
             >
               {textTr.consultBtnDesc}
             </button>
@@ -86,6 +88,8 @@ export const Consultations = ({ textTr }) => {
               <Image
                 src={iconHeadLock}
                 alt="icon-brain"
+                width={39}
+                height={47}
                 className="mr-6 md:w-[78px] md:h-[95px]"
               />
               <h2 className=" font-corsa md:text-3xl">
@@ -119,7 +123,7 @@ export const Consultations = ({ textTr }) => {
             <button
               type="button"
               onClick={() => setIsOpen2(true)}
-              className="rounded-full w-full py-3.5 font-poiret border border-dashed hover:bg-btn-active md:text-3xl"
+              className="rounded-full w-full py-3.5 font-poiret border border-dashed hover:bg-btn-active hover:border-[#FFDF44] md:text-3xl"
             >
               {textTr.consultBtnDesc}
             </button>
@@ -130,6 +134,8 @@ export const Consultations = ({ textTr }) => {
               <Image
                 src={iconHeadHeart}
                 alt="icon-brain"
+                width={39}
+                height={47}
                 className="mr-6 md:w-[78px] md:h-[95px]"
               />
               <h2 className=" font-corsa md:text-3xl">
@@ -163,7 +169,7 @@ export const Consultations = ({ textTr }) => {
             <button
               type="button"
               onClick={() => setIsOpen3(true)}
-              className="rounded-full w-full py-3.5 font-poiret border border-dashed hover:bg-btn-active md:text-3xl"
+              className="rounded-full w-full py-3.5 font-poiret border border-dashed hover:bg-btn-active hover:border-[#FFDF44] md:text-3xl"
             >
               {textTr.consultBtnDesc}
             </button>
@@ -174,6 +180,8 @@ export const Consultations = ({ textTr }) => {
               <Image
                 src={iconHeadPuzzle}
                 alt="icon-brain"
+                width={39}
+                height={47}
                 className="mr-6 md:w-[78px] md:h-[95px]"
               />
               <h2 className=" font-corsa md:text-3xl">
@@ -200,7 +208,7 @@ export const Consultations = ({ textTr }) => {
               </p>
             </div>
             <Link href="#formMes">
-              <h2 className="mb-6 text-center bg-btn-bg rounded-full w-full py-3.5 font-poiret hover:bg-btn-active md:text-3xl">
+              <h2 className="mb-6 text-center bg-btn-bg rounded-full w-full py-3.5 font-poiret hover:bg-btn-active hover:border-[#FFDF44] md:text-3xl">
                 {textTr.consultBtnSign}
               </h2>
             </Link>

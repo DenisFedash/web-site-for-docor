@@ -56,7 +56,7 @@ export const Socials = ({ textTr }) => {
             target="blanc"
             className="flex flex-col items-center justify-center"
           >
-            <div className=" bg-yellow-col p-2 w-9 h-9 rounded-lg mb-4 hover:bg-btn-active">
+            <div className=" bg-yellow-col px-2 py-2.5 w-9 h-9 rounded-lg mb-4 hover:bg-btn-active">
               <Image src={youtube} alt="youtube" />
             </div>
             <p className=" font-poiret md:text-3xl">YouTube</p>

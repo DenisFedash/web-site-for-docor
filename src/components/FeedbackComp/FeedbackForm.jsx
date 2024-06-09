@@ -13,18 +13,16 @@ export const FeedbackForm = ({ textTr }) => {
     const formData = { name, message };
 
     try {
-      // Отправляем данные на указанный API эндпоинт
       await axios.post(
         "https://6287a903e9494df61b3d821b.mockapi.io/feedback",
         formData
       );
-      // Очищаем поля формы
       setName("");
       setMessage("");
-      setError(null); // Сбрасываем ошибку, если была
+      setError(null);
     } catch (error) {
       console.error("Error saving data:", error);
-      setError("Failed to submit feedback. Please try again later."); // Устанавливаем сообщение об ошибке
+      setError("Failed to submit feedback. Please try again later.");
     }
   };
 
@@ -35,7 +33,7 @@ export const FeedbackForm = ({ textTr }) => {
       </h2>
       <form onSubmit={handleSubmit} className="">
         <div className="mb-8">
-          <label className=" font-poiret mb-2.5 md:text-3xl">
+          <label className="font-poiret mb-2.5 md:text-3xl">
             {textTr.feedbackFormName}
           </label>
           <input
