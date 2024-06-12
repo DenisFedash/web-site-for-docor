@@ -164,7 +164,7 @@ export const About = ({ textTr }) => {
           )}
         </div>
       </div>
-      <div className="lg:grid lg:gap-10 lg:grid-cols-2">
+      <div className=" sm:hidden lg:grid lg:gap-10 lg:grid-cols-2">
         <div className="mb-8 md:mb-12">
           <div className="font-poiret py-2.5 w-full mb-2.5 lg:rounded-[40px] lg:rounded-b-none bg-btn-bg">
             <p className="md:text-3xl md:py-[11px] md:px-[107px] lg:px-6">

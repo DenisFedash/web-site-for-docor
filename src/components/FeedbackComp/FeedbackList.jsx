@@ -64,7 +64,7 @@ export const FeedbackList = ({ textTr }) => {
           className="mr-auto ml-auto md:w-[220px]"
         />
       </div>
-      <div className="container-box p-12">
+      <div className="container-box">
         <Swiper
           navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
           loop={true}
@@ -90,8 +90,8 @@ export const FeedbackList = ({ textTr }) => {
           ) : (
             sortedFeedbacks.reverse().map((entry, index) => (
               <SwiperSlide key={index}>
-                <div>
-                  <div className="bg-[#FFF7D2] rounded-3xl shadow-card-shadow lg:shadow-none p-[22px] md:w-[253px] lg:w-[374px] md:ml-auto md:mr-auto">
+                <div className="">
+                  <div className="bg-[#FFF7D2] rounded-3xl p-[22px] md:w-[253px] lg:w-[374px] md:ml-auto md:mr-auto">
                     <div className="flex items-center justify-between mb-6">
                       <div className="border-b-2 border-dashed border-[#A68D6E] w-[106px]"></div>
                       <Image src={brackets} alt="brackets" />
