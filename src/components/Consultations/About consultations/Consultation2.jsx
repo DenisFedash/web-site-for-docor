@@ -10,7 +10,7 @@ export const Consultation2 = ({ textTr, setIsOpen2 }) => {
   return (
     <div className="bg-[#fffefb]">
       <div className="">
-        <div className=" flex justify-between bg-gradient-header py-2 mb-8 fixed w-full layout">
+        <div className=" flex justify-between bg-[#FFDF44] py-2 mb-8 fixed w-full pl-5 pr-5 md:pl-10 md:pr-10">
           <Image
             src={logo}
             alt="logo"
@@ -29,7 +29,7 @@ export const Consultation2 = ({ textTr, setIsOpen2 }) => {
             />
           </div>
         </div>
-        <div className="layout pb-6 md:pb-12">
+        <div className="pl-5 pr-5 md:pl-10 md:pr-10 pb-6 md:pb-12">
           <div className="flex items-center justify-center mb-8 md:mb-12">
             <div className="mt-24 flex items-center justify-center">
               <Image src={leftBracket} alt="left-bracket" />
@@ -40,22 +40,22 @@ export const Consultation2 = ({ textTr, setIsOpen2 }) => {
             </div>
           </div>
           <ul className="mb-8 md:mb-12">
-            <li className=" font-poiret mb-8 md:text-3xl md:mb-10">
+            <li className=" font-poiret mb-8 md:text-3xl md:mb-10 text-justify">
               {textTr.consult2Option1}
             </li>
-            <li className=" font-poiret mb-8 md:text-3xl md:mb-10">
+            <li className=" font-poiret mb-8 md:text-3xl md:mb-10 text-justify">
               {textTr.consult2Get1}
             </li>
-            <li className=" font-poiret mb-8 md:text-3xl md:mb-10">
+            <li className=" font-poiret mb-8 md:text-3xl md:mb-10 text-justify">
               {textTr.consult2Option3}
             </li>
-            <li className=" font-poiret mb-8 md:text-3xl md:mb-10">
+            <li className=" font-poiret mb-8 md:text-3xl md:mb-10 text-justify">
               {textTr.consult2Option4}
             </li>
-            <li className=" font-poiret mb-8 md:text-3xl md:mb-10">
+            <li className=" font-poiret mb-8 md:text-3xl md:mb-10 text-justify">
               {textTr.consult2Option5}
             </li>
-            <li className=" font-poiret mb-8 md:text-3xl">
+            <li className=" font-poiret mb-8 md:text-3xl text-justify">
               {textTr.consult2Option6}
             </li>
           </ul>

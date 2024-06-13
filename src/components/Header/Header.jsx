@@ -44,9 +44,9 @@ export const Header = ({ textTr }) => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="relative flex justify-center ">
-      <div className="fixed z-10 bg-[#FFDF44] w-full">
-        <div className="layout flex justify-between  py-2 ">
+    <div className="relative flex justify-center z-10">
+      <div className="fixed bg-[#FFDF44] w-full top-0">
+        <div className="layout flex justify-between py-2 ">
           <Image
             src={logo}
             alt="logo"
@@ -169,7 +169,7 @@ export const Header = ({ textTr }) => {
 
       <div
         className={
-          isOpen ? "top-0 left-0 z-10 fixed overflow-auto max-h-full" : "hidden"
+          isOpen ? "top-0 z-10 fixed overflow-auto max-h-full" : "hidden"
         }
       >
         <Menu textTr={textTr} setIsOpen={setIsOpen} />

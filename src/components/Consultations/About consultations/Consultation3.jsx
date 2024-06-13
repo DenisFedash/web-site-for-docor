@@ -10,7 +10,7 @@ export const Consultation3 = ({ textTr, setIsOpen3 }) => {
   return (
     <div className="bg-[#fffefb]">
       <div className="">
-        <div className=" flex justify-between bg-gradient-header py-2 mb-8 fixed w-full layout">
+        <div className=" flex justify-between bg-[#FFDF44] py-2 mb-8 fixed w-full pl-5 pr-5 md:pl-10 md:pr-10">
           <Image
             src={logo}
             alt="logo"
@@ -29,7 +29,7 @@ export const Consultation3 = ({ textTr, setIsOpen3 }) => {
             />
           </div>
         </div>
-        <div className="layout pb-6 md:pb-12">
+        <div className="pl-5 pr-5 md:pl-10 md:pr-10 pb-6 md:pb-12">
           <div className="flex items-center justify-center mb-8 md:mb-12">
             <div className="mt-24 flex items-center justify-center">
               <Image src={leftBracket} alt="left-bracket" />
@@ -40,16 +40,16 @@ export const Consultation3 = ({ textTr, setIsOpen3 }) => {
             </div>
           </div>
           <ul className="mb-8 md:mb-12">
-            <li className=" font-poiret mb-8 md:text-3xl md:mb-10">
+            <li className=" font-poiret mb-8 md:text-3xl md:mb-10 pl-5 pr-5 md:pl-10 md:pr-10">
               {textTr.consult3Option1}
             </li>
-            <li className=" font-poiret mb-8 md:text-3xl md:mb-10">
+            <li className=" font-poiret mb-8 md:text-3xl md:mb-10 pl-5 pr-5 md:pl-10 md:pr-10">
               {textTr.consult3Get1}
             </li>
-            <li className=" font-poiret mb-8 md:text-3xl md:mb-10">
+            <li className=" font-poiret mb-8 md:text-3xl md:mb-10 pl-5 pr-5 md:pl-10 md:pr-10">
               {textTr.consult3Option3}
             </li>
-            <li className=" font-poiret mb-8 md:text-3xl">
+            <li className=" font-poiret mb-8 md:text-3xl pl-5 pr-5 md:pl-10 md:pr-10">
               {textTr.consult3Option4}
             </li>
           </ul>
