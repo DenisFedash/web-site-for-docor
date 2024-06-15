@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import snake from "../../../public/icons/snake.svg";
 import arrow from "../../../public/icons/arrow.svg";
 import { AboutMe } from "./AboutMe";
@@ -20,6 +20,18 @@ export const About = ({ textTr }) => {
       [section]: !prevState[section],
     }));
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+    // Cleanup function to remove the class if the component unmounts
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [isOpen]);
   return (
     <div id="about" className="layout mb-16 md:mb-[108px] ">
       <div className="mb-8 md:mb-12 text-center">
@@ -239,7 +251,7 @@ export const About = ({ textTr }) => {
         </div>
       </div>
       <div
-        className=" text-center font-poiret underline text-[#A68D6E] md:text-3xl"
+        className=" text-center font-poiret underline text-[#A68D6E] md:text-3xl cursor-pointer"
         onClick={() => setIsOpen(true)}
       >
         {textTr.aboutMore}

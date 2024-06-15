@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useForm, useFetch } from "@formspree/react";
 import arrow from "../../../public/icons/down-arrow.svg";
 import check from "../../../public/icons/check.svg";
@@ -7,34 +7,40 @@ import check from "../../../public/icons/check.svg";
 import Image from "next/image";
 import waveLine from "../../../public/icons/snake.svg";
 
-export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
+export const FormMessage = ({ textTr }) => {
   const [checkboxChecked, setCheckboxChecked] = useState(false);
   const [state, handleSubmit, resetState] = useForm("xzbnajky");
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenConsult, setIsOpenConsult] = useState(false);
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setIsOpen(true);
+    }
+  }, [state.succeeded]);
 
   const resetSucceed = () => {
     resetState();
     setIsOpen(false);
     setCheckboxChecked(false);
-    setIsOpenConsult(false);
+    if (formRef.current) {
+      formRef.current.reset();
+    }
   };
 
-  if (state.succeeded) {
-    return (
-      <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-200 bg-opacity-75 text-center">
-        <div className="bg-[#fffefb] p-6 rounded-lg w-[250px] h-[250px]">
-          <p className="pt-5 text-xl font-poiret mb-10">
-            {textTr.heroRequestMessage}
-          </p>
-          <button
-            className="font-poiret bg-btn-bg py-2.5 rounded-full w-[100px]"
-            onClick={resetSucceed}
-          >
-            Close
-          </button>
-        </div>
-      </div>
-    );
-  }
+  useEffect(() => {
+    if (state.succeeded) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+
+    // Cleanup function to reset overflow style when component unmounts
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [state.succeeded]);
 
   const handleCheckboxChange = (e) => {
     setCheckboxChecked(e.target.checked);
@@ -42,8 +48,23 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
 
   return (
     <div id="formMes" className="layout mb-20">
+      {state.succeeded && isOpen && (
+        <div className="fixed top-10 left-0 w-full h-full flex items-center justify-center bg-gray-200 bg-opacity-75 text-center overflow-hidden z-10">
+          <div className="bg-[#fffefb] p-6 rounded-lg w-[250px] h-[250px] border border-dashed">
+            <p className="pt-5 text-xl font-poiret mb-10">
+              {textTr.RequestMessage}
+            </p>
+            <button
+              className="font-poiret bg-btn-bg py-2.5 rounded-full w-[100px]"
+              onClick={resetSucceed}
+            >
+              {textTr.RequestClose}
+            </button>
+          </div>
+        </div>
+      )}
       <div className="mb-8 md:mb-12">
-        <h2 className=" text-center font-corsa text-xl md:text-5xl">
+        <h2 className="text-center font-corsa text-xl md:text-5xl">
           {textTr.FormTitle}
         </h2>
         <Image
@@ -58,9 +79,9 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
         {textTr.FormNameTitle}
       </h2>
 
-      <form onSubmit={handleSubmit}>
+      <form ref={formRef} onSubmit={handleSubmit}>
         <div className="flex flex-col mb-4">
-          <label htmlFor="name" className=" font-poiret md:text-3xl">
+          <label htmlFor="name" className="font-poiret md:text-3xl">
             {textTr.FormName}
           </label>
           <input
@@ -72,7 +93,7 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
           />
         </div>
         <div className="flex flex-col mb-4">
-          <label htmlFor="email" className=" font-poiret md:text-3xl">
+          <label htmlFor="email" className="font-poiret md:text-3xl">
             {textTr.FormEmail}
           </label>
           <input
@@ -84,7 +105,7 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
           />
         </div>
         <div className="flex flex-col mb-4">
-          <label htmlFor="connect" className=" font-poiret md:text-3xl">
+          <label htmlFor="connect" className="font-poiret md:text-3xl">
             {textTr.FormConnect}
           </label>
           <input
@@ -96,7 +117,7 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
           />
         </div>
         <div className="flex flex-col mb-4 relative">
-          <label htmlFor="selectOption" className=" font-poiret md:text-3xl">
+          <label htmlFor="selectOption" className="font-poiret md:text-3xl">
             {textTr.FormOptions}
           </label>
           <select
@@ -120,7 +141,7 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
           />
         </div>
         <div className="flex flex-col mb-6 relative">
-          <label htmlFor="message" className=" font-poiret md:text-3xl">
+          <label htmlFor="message" className="font-poiret md:text-3xl">
             {textTr.FormMessage}
           </label>
           <textarea
@@ -146,7 +167,7 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
           <label htmlFor="agreement" className="flex items-center">
             <div
               className={`w-9 h-8 border border-border-color rounded-md flex items-center justify-center mr-2 ${
-                checkboxChecked ? " bg-btn-bg" : ""
+                checkboxChecked ? "bg-btn-bg" : ""
               }`}
             >
               {!checkboxChecked ? (
@@ -155,15 +176,13 @@ export const FormMessage = ({ textTr, setIsOpen, setIsOpenConsult }) => {
                 <Image src={check} alt="check" width={20} height={9} />
               )}
             </div>
-            <div className=" font-poiret md:text-3xl">
-              {textTr.FormCheckbox}
-            </div>
+            <div className="font-poiret md:text-3xl">{textTr.FormCheckbox}</div>
           </label>
         </div>
         <button
           type="submit"
           disabled={state.submitting || !checkboxChecked}
-          className=" font-poiret bg-btn-bg py-5 rounded-full w-full hover:bg-btn-active md:text-3xl"
+          className="font-poiret bg-btn-bg py-5 rounded-full w-full hover:bg-btn-active md:text-3xl"
         >
           {textTr.FormBtn}
         </button>

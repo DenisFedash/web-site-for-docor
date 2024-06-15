@@ -88,7 +88,7 @@ export const Menu = ({ textTr, setIsOpen }) => {
           className=" border-b-2 border-dashed mb-8"
           onClick={() => setIsOpen(false)}
         >
-          <Link href="#contacts">
+          <Link href="#">
             <h2 className="m-5 text-xl md:text-3xl font-corsa">
               {textTr.headerContacts}
             </h2>

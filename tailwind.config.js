@@ -38,6 +38,8 @@ module.exports = {
           "linear-gradient(180deg, #FFE793 0%, rgba(255, 230.87, 147.05, 0) 100%)",
         "footer-gradient":
           "linear-gradient(180deg, rgba(255, 231, 147, 0.00) 0%, #FFE793 100%)",
+        "recomend-gradient":
+          "linear-gradient(180deg, rgba(255, 247, 210, 0.00) -8.99%, rgba(255, 247, 210, 0.44) 41.15%, rgba(255, 247, 210, 0.56) 79.4%, rgba(255, 247, 210, 0.00) 105.99%)",
       },
     },
   },

@@ -160,3 +160,6 @@ body{
   border-radius: 50%;
 }
 
+body.modal-open {
+  overflow: hidden;
+}

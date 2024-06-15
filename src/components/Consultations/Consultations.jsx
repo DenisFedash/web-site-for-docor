@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import longSnake from "../../../public/icons/long-snake.svg";
 import brain from "../../../public/icons/icon-brain.svg";
 import iconHeadLock from "../../../public/icons/icon-head-lock.svg";
@@ -21,6 +21,21 @@ export const Consultations = ({ textTr }) => {
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
+
+  const toggleBodyScroll = (isOpen) => {
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+  };
+
+  useEffect(() => {
+    toggleBodyScroll(isOpen1 || isOpen2 || isOpen3 || isOpen4);
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [isOpen1, isOpen2, isOpen3, isOpen4]);
 
   return (
     <div id="consultations" className="layout relative mb-20">
@@ -261,11 +276,7 @@ export const Consultations = ({ textTr }) => {
         <Consultation4 textTr={textTr} setIsOpen4={setIsOpen4} />
       </div>
 
-      <Image
-        src={green}
-        alt="green"
-        className="absolute -top-6 -left-4 -z-10"
-      />
+      <Image src={green} alt="green" className="absolute -top-6 -left-4 z-0" />
     </div>
   );
 };

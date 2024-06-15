@@ -40,9 +40,18 @@ export const Header = ({ textTr }) => {
     }
   }, [languages]);
 
-  const toggleModal = () => {
-    setIsOpen(!isOpen);
-  };
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+    // Cleanup function to remove the class if the component unmounts
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [isOpen]);
+
   return (
     <div className="relative flex justify-center z-10">
       <div className="fixed bg-[#FFDF44] w-full top-0">
@@ -115,13 +124,10 @@ export const Header = ({ textTr }) => {
               </Link>
             </li>
             <li className="mr-20 ">
-              <Link
-                href="#contacts"
-                onClick={() => handleItemClick("contacts")}
-              >
+              <Link href="#formMes" onClick={() => handleItemClick("formMes")}>
                 <h2 className="text-2xl font-corsa">
                   {textTr.headerContacts}
-                  {activeItem === "contacts" && (
+                  {activeItem === "formMes" && (
                     <Image
                       src={underline}
                       alt="underline"

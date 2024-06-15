@@ -26,7 +26,7 @@
     },
 
      "about":{
-        "aboutTitle": "Обо мне",
+        "aboutTitle": "About me",
         "aboutBtnFirst": "A doctor for whom achieving the patient’s health is a priority",
         "aboutTextFirst": "My goal is to achieve a complete sense of well-being for the patient: achieving the highest stage of Maslow's pyramid - self-actualization.",
         "aboutBtnSecond": "Psychedelics Researcher",
@@ -145,7 +145,8 @@
         "FormOption4": "Psychedelic Experience Integration",
         "FormMessage": "Your request",
         "FormCheckbox": "I consent to the processing of personal data",
-        "RequestMessage": "Thank you. Your request has been sent",
+        "RequestMessage": "Thank you. Your request has been sent!",
+         "RequestClose": "Close",
         "FormBtn": "Sign up for a consultation"
     },
 
